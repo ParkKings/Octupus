@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Το Μαγικό Χταπόδι</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Γεια σας είμαι ο μπομπ το χταπόδι</h1>
+    </header>
+
+    <div class="content">
+      <img
+        src="https://i.pinimg.com/originals/a1/e4/49/a1e449c1badf464dff6284c1ecb34600.gif"
+        alt="Χταπόδι που κολυμπά"
+        class="octopus-animation"
+      />
+
+      <button id="reveal-btn">Αυτά είναι κάποια από τα σημαντικότερα χαρακτηριστικά μου</button>
+      <div id="facts-container" class="hidden">
+        <div id="small-containers">
+          <div class="octopus-fact">Είμαι μαλάκιο και ανήκω στην οικογένεια των κεφαλόποδων.</div>
+          <div class="octopus-fact">Έχω οχτώ πλοκάμια.</div>
+          <div class="octopus-fact">Έχω τρεις καρδιές, και η μία σταματά όταν κολυμπά.</div>
+          <div class="octopus-fact">Μπορώ να κολυμπάω με ταχύτητα 40 χλμ/ώρα.</div>
+          <div class="octopus-fact">Είμαι εξαιρετικός κολυμβητής και μπορώ να κολυμπάω προς τα πίσω.</div>
+          <div class="octopus-fact">Μπορώ να αλλάξω χρώμα και υφή για να καμουφλαριστώ τέλεια.</div>
+        </div>
+        <div id="small-containers2">
+          <div class="octopus-fact">Είμαι πανέξυπνο, λύνω γρίφους και μαθαίνω από την εμπειρία.</div>
+          <div class="octopus-fact">Κάθε πλοκάμι μου έχει "δικό του μυαλό".</div>
+          <div class="octopus-fact">Χωράω σε ανοίγματα όσο μικρό είναι το ράμφος του.</div>
+          <div class="octopus-fact">Δεν έχω σκελετό γεγονός που μου επιτρέπει να περνάω από πολύ στενά ανοίγματα</div>
+          <div class="octopus-fact">Όταν απειλούμε, εκτοξεύω μελάνι, ώστε να αποπροσανατολίσω</div>
+          <div class="octopus-fact">Ζούμε μόνο ένα με δύο χρόνια</div>
+          <div class="octopus-fact">
+            Συνήθως ζούμε μόνα μας και αποφεύγουμε την επαφή με άλλα χταπόδια εκτός από την διάρκεια αναπαραγωγή
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-container"><img src="https://mail.google.com/mail/u/0?ui=2&ik=20861575da&attid=0.1&permmsgid=msg-f:1830297545484421295&th=196685eb97de48af&view=att&disp=safe&realattid=196685e7604fc58d2141&zw" alt="giant octopus" id="octupus-img">
+</div>
+
+    <footer>Φτιαγμένο με αγάπη για το πιο μαγικό πλάσμα της θάλασσας.</footer>
+
+    <script>
+      const button = document.getElementById("reveal-btn");
+      const facts = document.getElementById("facts-container");
+
+      button.addEventListener("click", () => {
+        facts.classList.toggle("hidden");
+        button.textContent = facts.classList.contains("hidden")
+          ? "Αυτά είναι κάποια από τα σημαντικότερα χαρακτηριστικά μου"
+          : "Κρύψε τα χαρακτηριστικά μου";
+      });
+    </script>
+  </body>
+</html>

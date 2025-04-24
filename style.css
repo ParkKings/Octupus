@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #1a1a2e, #0f3460);
+  color: #eee;
+}
+
+header {
+  background-color: #3f0071;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.octopus-fact {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid #6a0dad;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.octopus-fact:hover {
+  transform: scale(1.03);
+  background-color: rgba(106, 13, 173, 0.4);
+}
+
+#reveal-btn {
+  display: block;
+  margin: 2rem auto;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reveal-btn:hover {
+  background-color: #8a2be2;
+}
+
+.hidden {
+  display: none;
+}
+
+.octopus-animation {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(106, 13, 173, 0.5);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.octopus-fact:nth-child(odd) {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  animation: appearOdd 2s infinite ease-in-out;
+}
+
+.octopus-fact:nth-child(even) {
+  text-align: center;
+  animation: appearEven 2s infinite ease-in-out;
+}
+
+@keyframes appearOdd {
+  0% {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  50% {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  100% {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@keyframes appearEven {
+  0% {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  50% {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  100% {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+#octupus-img {
+  width: 1000px;
+  height: auto;
+  
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  #octupus-img {
+    width: 600px;
+  }
+}
